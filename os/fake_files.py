@@ -55,7 +55,7 @@ print('> Creating files...')
 for i in range(1, filesCount + 1):
     begin = time()
 
-    with open(f'{destinyPath}/fake_file_{i:03}', 'a+') as file:
+    with open(f'{destinyPath}/fake_file_{time()}_{i}', 'a+') as file:
         file.write(character * charactersPerFile)
 
     print(f'File {i} created ({round(time() - begin, 2)}s).')
